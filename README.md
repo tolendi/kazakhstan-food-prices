@@ -51,4 +51,3 @@
 *   **Интерактивный дашборд:** [Смотреть на Tableau Public](https://public.tableau.com/app/profile/tolendi.kaken/viz/KazakhstanFoodPriceMonitoring2022-2026/sheet0)
 
 ---
-*Проект выполнен в рамках портфолио Junior Data Analyst.*
