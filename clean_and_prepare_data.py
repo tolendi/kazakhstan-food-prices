@@ -3,16 +3,14 @@ import os
 import glob
 import re
 
-def clean_and_combine_final_v8():
+def process_data():
     all_data = []
     # Путь к папке с файлами
     file_list = glob.glob("raw_data/*.xls")
     
-    print(f"Начинаю обработку {len(file_list)} файлов...")
-
+    
     # Словарь для нормализации названий товаров
-    # (Добавляй сюда новые варианты, если в Tableau снова увидишь дубли)
-    product_mapping = {
+        product_mapping = {
         'Яйца, 1 категории, десяток': 'Яйца, 1 категории',
         'Кефир 2,5%, литр': 'Кефир 2-3% жирности',
         'Кефир 2-3% жирности, литр': 'Кефир 2-3% жирности',
@@ -127,4 +125,4 @@ def clean_and_combine_final_v8():
         print("Данные не были собраны.")
 
 if __name__ == "__main__":
-    clean_and_combine_final_v8()
+    process_data()
